@@ -1,0 +1,117 @@
+body {
+  background-color: #F8BD4F;
+}
+#nav {
+  background-color: #011638;
+  height: 80px;
+}
+.options {
+  margin-top: 2%;
+  /*transform: translate(-15px, 0px);*/
+}
+#logo {
+  width: 80px;
+  height: 80px;
+  transform: translate(-15px, -10%);
+  
+}
+.guildimage {
+  height: 105px;
+  width: 105px;
+  border-radius:50%;
+  margin-left:20%;
+}
+.cardcolor {
+  background-color:#034078;
+  width: 12rem;
+}
+.cardtext {
+  background-color:#FEFCFB;
+  height: 60px;
+  margin-top:5%;
+  transform: translate(0px, 0px);
+}
+
+.grid {  
+    
+    display: grid;
+    
+    background-color: #F8BD4F;
+    height: 100%;
+    width: 100%;
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 150px 100px 100px 300px 100px; 
+}
+
+
+.box {
+  background-color: 248, 189, 79;
+  color: black;
+  border: 0px dodgerblue solid;
+}
+
+.Featured {
+  grid-row-start: 1;
+  grid-column-start: 4;
+  grid-column-end: 8;
+  text-align: center;
+  color: white;
+  background-color: #011638;
+  transform: translate(00px, 20px);
+}
+
+.a{
+  grid-row-start: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  text-align: center;
+  background-color: #011638;
+  transform: translate(00px, 20px);
+}
+
+.b{
+  grid-row-start: 3;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  text-align: center;
+  background-color: #011638;
+  transform: translate(-40%, 20px);
+}
+
+.c{
+  grid-row-start: 3;
+  grid-column-start: 8;
+  grid-column-end: 9;
+  text-align: center;
+  
+  background-color: #011638;
+  transform: translate(-80%, 20px);
+}
+
+.white{
+  color: White;
+}
+.black{
+  color: black;
+}
+.d{
+  grid-row-start: 6;
+  grid-column-start: 4;
+  grid-column-end: 8;
+  text-align: center;
+  transform: translate(0%, -10px);
+}
+input[type="text"] {
+    width: 400px;
+    text-align: center;
+}
+
+
+input[type="submit"] {
+    transform: translate(370%, -30px);
+    grid-row-start: 6;
+    grid-column-start: 7;
+    grid-column-end: 8;
+}

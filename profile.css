@@ -1,0 +1,56 @@
+body {
+  background-color: #F8BD4F;
+}
+#nav {
+  background-color: #011638;
+  height: 80px;
+}
+.options {
+  margin-top: 2%;
+ /* transform: translate(-15px, 0px);*/
+}
+#logo {
+  width: 80px;
+  height: 80px;
+  transform: translate(-15px, -10%);
+  
+}
+#description {
+  background-color: #FEFCFB;
+  height: 520px;
+  width: 200px;
+  margin-top: 10%;
+}
+#name {
+  background-color:#FEFCFB;
+  transform:translate(60%, -1290%); 
+  height: 50px;
+  width:500px;
+  
+}
+.gallery {
+
+  transform:translate(30%, -500%);
+}
+.space {
+  margin-right: 5%;
+  margin-bottom: 1%;
+  transform:translate(-20%,0%);
+}
+.price {
+  background-color:#FEFCFB;
+  height: 30%;
+  width: 60%;
+  transform: translate(47%, -280%);
+  /*margin-bottom: 85%;*/
+}
+.profileimg {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  transform: translate(35%, 90%);
+}
+.rise {
+  border: 2px solid black;
+  transform: translate(0px, -0%);
+}

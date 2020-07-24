@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Contact</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/Contact.css" />
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" id="nav">
+        <div class="col">
+          <a href="/index.html"
+            ><img
+              class="options"
+              id="logo"
+              src="https://i.ytimg.com/vi/TaDrNskHcnI/hqdefault.jpg"
+          /></a>
+        </div>
+        <div class="col-2 options">
+          <a class="btn btn-light btn-sm" href="/Home.html">Home</a>
+        </div>
+        <div class="col-2 options">
+          <a class="btn btn-light btn-sm" href="/Guilds.html">Guilds</a>
+        </div>
+
+        <div class="col-2 options">
+          <a class="btn btn-light btn-sm" href="/Contractors.html"
+            >Contractors</a
+          >
+        </div>
+        <div class="col-2 options">
+          <a class="btn btn-light btn-sm" href="/Contact.html">Contact Us</a>
+        </div>
+        <div class="col ">
+          <a href="/Login.html">Sign in/Log in</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center problemtext">
+        <h2>
+          Have a problem or suggestion? Contact us!
+        </h2>
+      </div>
+      <div class="row justify-content-center problemtext">
+        <h4>
+          Email@gmail.com
+        </h4>
+      </div>
+    </div>` 
+
+    <div id="unsubmitted-form">
+        <table border="0">
+            <tbody>
+              <tr>
+                <td><input class="clear" type="text" id="fname" name="fname" placeholder="First Name" /></td>
+                <td></td>
+                <td><input class="clear" type="text" id="lname" name="lname" placeholder="Last Name" /></td>
+              </tr>
+              <tr>
+                <td><input class="clear" type="text" id="email" name="email" placeholder="Email" /></td>
+                <td></td>
+                <td><input class="clear" type="text" id="phone" name="phone" placeholder="Phone Number xxx-xxx-xxxx" /></td>
+              </tr>
+              <tr>
+                <td><input class="clear" type="text" id="website" name="website" placeholder="Website" /></td>
+                <td></td>
+                <td><input class="clear" type="text" id="Company" name="company" placeholder="Company" /></td>
+              </tr>
+              <tr>
+                <td><textarea id="why" rows="4" cols="50" placeholder="What do you want to tell us"></textarea></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><button type="button" onclick="procesForm()">Submit</button></td>
+                <td></td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+  
+      <div id="submitted-form">
+        The Following information was given
+        <p id="name"></p>
+        <p id="mail"></p>
+        <p id="tele"></p>
+        <p id="msg"></p>
+      </div>
+
+    <script>
+      
+
+        
+          
+      
+      
+      document.getElementById("unsubmitted-form").style.display = "block";
+      document.getElementById("submitted-form").style.display = "none";
+      
+      document.getElementById("Mail").style.display = "none";
+      document.getElementById("Tele").style.display = "none";
+      
+      
+      f
+
+      function validateData(elementId, alertMsg){
+        var elementData = document.getElementById(elementId).value;
+        
+        if (elementData.length == 0) {          
+          alert(alertMsg);
+          document.getElementById(elementId).focus();
+          
+          return false;
+        }
+        
+        return true;        
+      }
+      
+      function procesForm() {
+
+
+        if (!validateData("fname", "Please enter a First Name")){
+          return;
+        }
+
+        if (validateData("lname", "Please enter a Last Name") == false){
+          return;
+        }
+
+        if (validateData("email", "Please enter an email") == false
+            || validateData("phone", "Please enter a phone number") == false){
+          return;
+        }         
+      
+        if (validateData("website", "Please enter a website") == false){
+          return;
+        } 
+
+        if (validateData("Company", "Please enter your company") == false){
+          return;
+        }         
+       
+        if (validateData("why", "Please enter your message") == false){
+          return;
+        }  
+
+        var FirstName = document.getElementById("fname").value;
+        var LastName = document.getElementById("lname").value;
+        var Email = document.getElementById("email").value;
+        var PhoneNumber = document.getElementById("phone").value;
+        var Website = document.getElementById("website").value;
+        var company = document.getElementById("Company").value;
+        var message = document.getElementById("why").value;
+        
+
+
+        document.getElementById("name").innerHTML = FirstName + " " + LastName;        
+        document.getElementById("mail").innerHTML = Email + " , " + PhoneNumber;        
+        document.getElementById("tele").innerHTML = company + ":  " + Website;        
+        document.getElementById("msg").innerHTML = message;
+        
+        document.getElementById("unsubmitted-form").style.display = "none";
+        document.getElementById("submitted-form").style.display = "block";
+        document.getElementById("Mail").style.display = "block";
+        document.getElementById("Tele").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
+
+

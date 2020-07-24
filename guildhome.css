@@ -1,0 +1,32 @@
+body {
+  background-color: #F8BD4F;
+}
+#nav {
+  background-color: #011638;
+  height: 80px;
+}
+.options {
+  margin-top: 2%;
+ /* transform: translate(-15px, 0px);*/
+}
+#logo {
+  width: 80px;
+  height: 80px;
+  transform: translate(-15px, -10%);
+  
+}
+.communityimg {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  transform:translate(20%,0px);
+}
+.communitydesc {
+  background-color: #FEFCFB;
+  width:150px;
+  height: 300px;
+  margin-top: 5%;
+}
+.text {
+  margin-top: 6%;
+}
