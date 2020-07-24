@@ -1,0 +1,72 @@
+body {
+ background-color: #F8BD4F;
+}
+#nav {
+  background-color: #011638;
+  height: 80px;
+}
+.options {
+  margin-top: 2%;
+  /*transform: translate(-15px, 0px);*/
+}
+#logo {
+  width: 80px;
+  height: 80px;
+  transform: translate(-15px, -10%);
+  
+}
+.problemtext{
+  margin-top: 3%;
+}
+
+input[type="text"] {
+    width: 400px;
+}
+/*
+
+
+input[type="submit"] {
+    transform: translate(800%, 250%);
+}
+
+
+
+#phone{
+    transform: translate(150%, 200%);
+}
+
+#website{
+  transform: translate(150%, 200%);
+}
+
+#why{
+  transform: translate(150%, 200%);
+}*/
+
+textarea {
+   width: 100%;
+}
+input{
+  width: 100%;
+}
+#submitted-form{
+  transform: translate(40%, 30%);
+}
+
+#why{
+  transform: translate(50%, 0%);
+  margin: 25px;
+}
+
+#unsubmitted-form{
+  transform: translate(15%, 0%);
+  border: 6px;
+  
+}
+.clear{
+  border: 0px solid black;
+}
+
+td {
+  padding: 10px;
+}
